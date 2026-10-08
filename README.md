@@ -60,18 +60,18 @@ The project uses four main datasets:
 The project uses a relational data model consisting of:
 
 ```text
-              ┌──────────────┐
+              ┌────────────┐
               │   Customers  │
-              └──────┬───────┘
+              └─────┬──────┘
                      │
                      │ CustomerID
                      ▼
-┌──────────────┐  ┌──────────────┐  ┌──────────────┐
-│    Dates     │  │    Sales     │  │   Products   │
-└──────┬───────┘  └──────┬───────┘  └──────┬───────┘
-       │                 │                 │
-       │ OrderDate       │ ProductID       │
-       └─────────────────┴─────────────────┘
+┌───────────┐  ┌───────────┐  ┌───────────┐
+│    Dates    │  │    Sales    │  │   Products  │
+└─────┬─────┘  └───────────┘  └─────┬─────┘
+       │                                 │                 
+       │ OrderDate                       │ ProductID       
+       └────────────────────────────┘
 ```
 
 The model allows sales transactions to be analyzed by:
