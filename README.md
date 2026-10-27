@@ -67,10 +67,10 @@ The project uses a relational data model consisting of:
                      │ CustomerID
                      ▼
 ┌───────────┐  ┌───────────┐  ┌───────────┐
-│    Dates    │  │    Sales    │  │   Products  │
+│    Dates  │  │    Sales  │  │   Products │
 └─────┬─────┘  └───────────┘  └─────┬─────┘
-       │                                 │                 
-       │ OrderDate                       │ ProductID       
+       │                            │                 
+       │ OrderDate                  │ ProductID       
        └────────────────────────────┘
 ```
 
