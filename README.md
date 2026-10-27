@@ -61,17 +61,17 @@ The project uses a relational data model consisting of:
 
 ```text
               ┌────────────┐
-              │   Customers  │
+              │  Customers │
               └─────┬──────┘
-                     │
-                     │ CustomerID
-                     ▼
+                    │
+                    │ CustomerID
+                    ▼
 ┌───────────┐  ┌───────────┐  ┌───────────┐
-│    Dates  │  │    Sales  │  │   Products │
+│   Dates   │  │   Sales   │  │  Products │
 └─────┬─────┘  └───────────┘  └─────┬─────┘
-       │                            │                 
-       │ OrderDate                  │ ProductID       
-       └────────────────────────────┘
+      │                             │                 
+      │ OrderDate                   │ ProductID       
+      └─────────────────────────────┘
 ```
 
 The model allows sales transactions to be analyzed by:
